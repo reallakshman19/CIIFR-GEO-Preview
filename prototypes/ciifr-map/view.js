@@ -1,5 +1,18 @@
 import {methodCSvgScene} from '../../tabs/cii-workspace/cii-workspace-method-c-svg.js';
 
+/** Display selection only; every physical NODE linked to any chosen ledger row. */
+export function selectedGeometryObjects(result, sources, picked = null) {
+  const selected = new Set((Array.isArray(sources) ? sources : [sources]).filter(Boolean));
+  const objects = Object.values(result.viewerScene.objects);
+  const ids = objects.filter(o => o.kind === 'NODE' && o.sourceRows.some(id => selected.has(id)))
+    .map(o => o.objectId);
+  const physical = picked?.objectId ? result.viewerScene.objects[picked.objectId] :
+    picked?.kind === 'NODE' ? objects.find(o => o.kind === 'NODE' && o.side === picked.side &&
+      o.nodeId === String(picked.nodeId)) : null;
+  if (physical) return [physical.objectId, ...ids.filter(id => id !== physical.objectId)];
+  return ids;
+}
+
 const format = value => Number.isFinite(value) ? Number(value.toFixed(4)).toString() : '—';
 const cell = (row, value) => { const td = document.createElement('td'); td.textContent = value; row.append(td); };
 export function graphInfo(graph) {
@@ -50,13 +63,18 @@ export function selectedDetails(result, selection, picked = null) {
     sourceCoordinateFrame: result.source.coordinateFrames[result.transform.sourceComponent],
     targetCoordinateFrame: result.target.coordinateFrames[result.transform.targetComponent]}, null, 2);
 }
-export function mountScene(result, canvas, select, selected = null, selectedElement = null) {
+export function mountScene(result, canvas, select, selected = null, selectedElement = null, selectedPick = null) {
   const chosen = Array.isArray(selected) ? selected[0] : selected;
   const scene = methodCSvgScene({...result, selectedSource: chosen, selectedElement});
   result.scene = scene;
   // Only the existing escaped Method C renderer supplies markup here.
   canvas.innerHTML = scene.svg;
   const svg = canvas.querySelector('svg'), base = {...scene.viewBox};
+  const nodeObjects = selectedGeometryObjects(result, selected, selectedPick).map(id => result.viewerScene.objects[id]);
+  for (const node of svg.querySelectorAll?.('[data-node]') || []) {
+    const active = nodeObjects.some(o => o.side === node.dataset.kind && o.nodeId === node.dataset.node);
+    node.classList.toggle('mc-selected', active); node.setAttribute('aria-pressed', String(active));
+  }
   let current = {...base}, drag = null;
   const apply = () => svg.setAttribute('viewBox', [current.x,current.y,current.width,current.height].join(' '));
   const pick = node => {

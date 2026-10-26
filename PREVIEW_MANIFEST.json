@@ -1,12 +1,12 @@
 {
   "source_repository": "reallakshman19/XML_Compare_Utilities",
-  "source_commit": "3787acdf6cd96e51c48f4a2d5de4f358a89cc095",
-  "source_tree": "0a449e73c50743e003013f570fddc733e84ba2b1",
+  "source_commit": "668c22b49077520e911a3ef64a931c94db3a0a29",
+  "source_tree": "b9e7f46cb260fc88fc37d832453752bde1e46f79",
   "files": [
     {
       "path": "prototypes/ciifr-map/app.js",
-      "size": 8338,
-      "sha": "eb39bfb078b235c6245f368f6ebf2fa64f0ba9bb"
+      "size": 9616,
+      "sha": "b925a9ef0671d295edc37318b2c4201db0617eab"
     },
     {
       "path": "prototypes/ciifr-map/compare.js",
@@ -30,18 +30,28 @@
     },
     {
       "path": "prototypes/ciifr-map/geo-viewer-bridge.js",
-      "size": 3280,
-      "sha": "da2c921425d666155e51cdaca3f2423cf12425f8"
+      "size": 4029,
+      "sha": "aab1f980bcbabe185f3739e5150e431e89ab70e6"
     },
     {
       "path": "prototypes/ciifr-map/index.html",
-      "size": 4347,
-      "sha": "0f21ad41e6479e0fa6e7cb9933fa588fe3e40755"
+      "size": 6088,
+      "sha": "523aba0822cef02a3d52659930050c1cc1421dd9"
+    },
+    {
+      "path": "prototypes/ciifr-map/review-viewport.js",
+      "size": 3578,
+      "sha": "4dea9d644f40b7a50c518df2af64bb1763cb67cd"
     },
     {
       "path": "prototypes/ciifr-map/styles.css",
-      "size": 3736,
-      "sha": "51ca6ec8902cacdf146b0d3f87ea100aecb040e9"
+      "size": 5006,
+      "sha": "5dc79f24283fb327a29cd929c6773fb414b19617"
+    },
+    {
+      "path": "prototypes/ciifr-map/tests/fixtures/manifest.json",
+      "size": 726,
+      "sha": "559ed00b9de48b362f0d7b207df2e3fc3abfc81a"
     },
     {
       "path": "prototypes/ciifr-map/tests/fixtures/S1-F05.xml",
@@ -52,11 +62,6 @@
       "path": "prototypes/ciifr-map/tests/fixtures/S1-R4.xml",
       "size": 1426775,
       "sha": "2da10efac2d2f040000edd988d4a1e0baae5dbe1"
-    },
-    {
-      "path": "prototypes/ciifr-map/tests/fixtures/manifest.json",
-      "size": 726,
-      "sha": "559ed00b9de48b362f0d7b207df2e3fc3abfc81a"
     },
     {
       "path": "prototypes/ciifr-map/vendor/three-0.160.0/LICENSE",
@@ -70,8 +75,8 @@
     },
     {
       "path": "prototypes/ciifr-map/view.js",
-      "size": 5571,
-      "sha": "a4b0cf91178e70e7481af133bba142cccb576310"
+      "size": 6765,
+      "sha": "2adcec35a719e2a8ddc6f6b4b577a3406b2e5518"
     },
     {
       "path": "prototypes/ciifr-map/xml-graph.js",
@@ -194,5 +199,5 @@
       "sha": "5135395ceb1daabb0301d96014a34f5c353d3793"
     }
   ],
-  "scope": "Temporary static preview; 38 source files byte-identical. Hosting-only landing page and manifest. No product release."
+  "scope": "Temporary static preview; 39 source files byte-identical. Hosting-only landing page and manifest. No product release. Native controlled tests do not establish GPU/Owner acceptance."
 }
