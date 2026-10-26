@@ -1,12 +1,17 @@
 {
   "source_repository": "reallakshman19/XML_Compare_Utilities",
-  "source_commit": "668c22b49077520e911a3ef64a931c94db3a0a29",
-  "source_tree": "b9e7f46cb260fc88fc37d832453752bde1e46f79",
+  "source_commit": "db86b64029e5f3bad5c2c43e803d71aa791c72ac",
+  "source_tree": "402c6a383a29a537faa801357ff51f11f8195f8a",
   "files": [
     {
       "path": "prototypes/ciifr-map/app.js",
-      "size": 9616,
-      "sha": "b925a9ef0671d295edc37318b2c4201db0617eab"
+      "size": 13720,
+      "sha": "d3b9851529d538cc36752da9a67b8946e486c544"
+    },
+    {
+      "path": "prototypes/ciifr-map/camera-presentation.js",
+      "size": 1183,
+      "sha": "773d073e1205910ac718561185a06ab2fb513d77"
     },
     {
       "path": "prototypes/ciifr-map/compare.js",
@@ -30,18 +35,48 @@
     },
     {
       "path": "prototypes/ciifr-map/geo-viewer-bridge.js",
-      "size": 4029,
-      "sha": "aab1f980bcbabe185f3739e5150e431e89ab70e6"
+      "size": 6147,
+      "sha": "a902c5ad993afa39c19540ddd065db8cf9c7d901"
     },
     {
       "path": "prototypes/ciifr-map/index.html",
-      "size": 6088,
-      "sha": "523aba0822cef02a3d52659930050c1cc1421dd9"
+      "size": 8113,
+      "sha": "37497b1d5be7c19c727df9948aa510c6a6dc4ea5"
+    },
+    {
+      "path": "prototypes/ciifr-map/multibase-view.js",
+      "size": 5684,
+      "sha": "6181832908e00f50e15c9f9f256e311640b2b25b"
+    },
+    {
+      "path": "prototypes/ciifr-map/multibase.css",
+      "size": 2148,
+      "sha": "250faa450dd8fd8857bb90f4bfed62e6120c9750"
+    },
+    {
+      "path": "prototypes/ciifr-map/proposal-ledger.js",
+      "size": 4978,
+      "sha": "755324efdc22ff9e598773f4c6ac064d73e97070"
+    },
+    {
+      "path": "prototypes/ciifr-map/resolution-fit.js",
+      "size": 4518,
+      "sha": "5a9262e23572d2e950bef07ed4a6aea46c94e17c"
+    },
+    {
+      "path": "prototypes/ciifr-map/resolution-search.js",
+      "size": 7816,
+      "sha": "915f3df9e8040fdcaa37a8952576be042ed928eb"
+    },
+    {
+      "path": "prototypes/ciifr-map/resolution-worker.js",
+      "size": 421,
+      "sha": "67005e30b3bf80c61bf77bbd6354def7d9b4afdb"
     },
     {
       "path": "prototypes/ciifr-map/review-viewport.js",
-      "size": 3578,
-      "sha": "4dea9d644f40b7a50c518df2af64bb1763cb67cd"
+      "size": 4788,
+      "sha": "1da3d8e0f5d505cc9c90c99a379b49e7118acbe5"
     },
     {
       "path": "prototypes/ciifr-map/styles.css",
@@ -75,8 +110,28 @@
     },
     {
       "path": "prototypes/ciifr-map/view.js",
-      "size": 6765,
-      "sha": "2adcec35a719e2a8ddc6f6b4b577a3406b2e5518"
+      "size": 10823,
+      "sha": "4f7d3043bef446e1f9190979aedd88a7f40c30e7"
+    },
+    {
+      "path": "prototypes/ciifr-map/viewer-feedback.css",
+      "size": 1199,
+      "sha": "c95c581d04306f16bc89ad217de2c450e4a1d1ab"
+    },
+    {
+      "path": "prototypes/ciifr-map/viewer-feedback.js",
+      "size": 6620,
+      "sha": "19ffdb116312d2209cf72adb2c884df8cd77ef44"
+    },
+    {
+      "path": "prototypes/ciifr-map/workbench-export.js",
+      "size": 2272,
+      "sha": "4bcc35bce0c6fae53e57825ddcd062f588bd2b7c"
+    },
+    {
+      "path": "prototypes/ciifr-map/workbench.js",
+      "size": 10135,
+      "sha": "b88d470d6270402fa2f015641029cbb159362f85"
     },
     {
       "path": "prototypes/ciifr-map/xml-graph.js",
@@ -155,8 +210,8 @@
     },
     {
       "path": "workbench3d/contracts/contracts.js",
-      "size": 13688,
-      "sha": "38543853963217a8bd567a26b3db35cdad11c48a"
+      "size": 13693,
+      "sha": "fd06ee02d4187ec355fe22f4b08320ee881d2445"
     },
     {
       "path": "workbench3d/ui/transfer-overlay-models.js",
@@ -185,19 +240,21 @@
     },
     {
       "path": "workbench3d/viewer/workbench-navigation-controls.js",
-      "size": 8776,
-      "sha": "9edb3eee27af97554a334250b6a866752ec86f77"
+      "size": 9055,
+      "sha": "666cd48be079d440fa824d0c5997c05f376d1cfb"
     },
     {
       "path": "workbench3d/viewer/workbench-navigation-state.js",
-      "size": 3878,
-      "sha": "2fd573c96ca7be8274f8e1b9e6b0f67d84078914"
+      "size": 3918,
+      "sha": "5603d3186a5482cced6fd44e00defe94e14c2fc2"
     },
     {
       "path": "workbench3d/viewer/workbench-viewer.js",
-      "size": 69094,
-      "sha": "5135395ceb1daabb0301d96014a34f5c353d3793"
+      "size": 71077,
+      "sha": "f8d74b0deff3eda17f8a266ebdb23f7120583c6d"
     }
   ],
-  "scope": "Temporary static preview; 39 source files byte-identical. Hosting-only landing page and manifest. No product release. Native controlled tests do not establish GPU/Owner acceptance."
+  "scope": "Owner-authorized temporary static A/B/Consolidated preview. Runtime source blobs byte-identical to named XCU commit; landing/manifest only are hosting-specific. No product release, Writer or physical-identity qualification.",
+  "independent_review": "https://github.com/reallakshman19/XML_Compare_Utilities/issues/186#issuecomment-6425272554",
+  "browser_gpu": "NOT_RUN_ON_BUILD_HOST"
 }

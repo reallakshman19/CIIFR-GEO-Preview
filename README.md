@@ -1,9 +1,5 @@
-# CIIFR_GEO temporary public preview
+# CIIFR_GEO temporary A/B/C trial
 
-Live: https://reallakshman19.github.io/CIIFR-GEO-Preview/
+Open https://reallakshman19.github.io/CIIFR-GEO-Preview/ . The app has a bundled public sample button, independent A/B bases, checked proposals and a Consolidated conflict view. Runtime files are copied unchanged from XCU db86b64029e5f3bad5c2c43e803d71aa791c72ac; PREVIEW_MANIFEST.json lists all50 source blobs.
 
-Pinned XCU source commit: 668c22b49077520e911a3ef64a931c94db3a0a29 / treeb9e7f46cb260fc88fc37d832453752bde1e46f79.
-
-Existing 3D Edit engine with Load Calc-style navigation/camera/physical NODE controls; full-screen same-table correspondence popup. All39 published source blobs match pinned source. PREVIEW_MANIFEST.json records custody. Static hosted public F05/R4 fixtures are one S1 original lineage. User-selected XML stays in browser; no upload backend.
-
-Read-only trial, not product release/engineering acceptance. Actual GPU/pixel/native fullscreen/Windows/Owner qualification remains separate. Temporary lifetime; no automatic deletion scheduled.
+Review: https://github.com/reallakshman19/XML_Compare_Utilities/issues/186#issuecomment-6425272554 . Scoped native PASS; actual rendered/browser/Windows/native-fullscreen and Owner acceptance are separate. This temporary preview is not an XCU product merge/release and grants no Writer/Apply or physical-identity qualification.
